@@ -1,4 +1,4 @@
-// Mock data for tennis courts
+
 export const mockCourts = [
   {
     id: 1,
@@ -702,7 +702,6 @@ export const mockCourts = [
   }
 ];
 
-// Search function
 export const searchCourts = (courts, query) => {
   if (!query.trim()) return courts;
   
@@ -717,14 +716,12 @@ export const searchCourts = (courts, query) => {
   );
 };
 
-// Sort function
 export const sortCourts = (courts, sortBy) => {
   return [...courts].sort((a, b) => {
     switch (sortBy) {
       case 'rating':
         return b.rating - a.rating;
       case 'price':
-        // Extract numeric value from price string for comparison
         const priceA = parseFloat(a.price.replace(/[^\d.]/g, ''));
         const priceB = parseFloat(b.price.replace(/[^\d.]/g, ''));
         return priceA - priceB;

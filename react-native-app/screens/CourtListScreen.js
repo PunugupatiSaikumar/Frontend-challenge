@@ -101,7 +101,6 @@ const CourtListScreen = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#1B5E20" />
       
-      {/* Modern Header */}
       <View style={styles.header}>
         <View style={styles.headerTop}>
           <View>
@@ -113,7 +112,6 @@ const CourtListScreen = ({ navigation }) => {
           </TouchableOpacity>
         </View>
         
-        {/* Search Bar */}
         <TouchableOpacity 
           style={styles.searchBar}
           onPress={() => setShowSearch(true)}
@@ -161,7 +159,6 @@ const CourtListScreen = ({ navigation }) => {
         </View>
       )}
 
-      {/* Results Count - Only show when searching */}
       {searchQuery && (
         <View style={styles.resultsContainer}>
           <Text style={styles.resultsText}>
@@ -175,7 +172,6 @@ const CourtListScreen = ({ navigation }) => {
 
     
 
-      {/* Courts List */}
       <FlatList
         data={filteredAndSortedCourts}
         renderItem={renderCourtCard}

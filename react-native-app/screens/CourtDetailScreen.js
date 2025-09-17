@@ -104,7 +104,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Court Image */}
         <View style={styles.imageContainer}>
           <Image source={{ uri: court.image }} style={styles.courtImage} />
           <View style={styles.imageOverlay}>
@@ -120,7 +119,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
           </View>
         </View>
         
-        {/* Court Info */}
         <View style={styles.infoContainer}>
           <View style={styles.courtHeader}>
             <View style={styles.courtTitleSection}>
@@ -130,7 +128,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
             <Text style={styles.courtPrice}>{court.price}</Text>
           </View>
           
-          {/* Rating */}
           <View style={styles.ratingSection}>
             <View style={styles.ratingContainer}>
               {renderStars(court.rating)}
@@ -140,7 +137,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
             </View>
           </View>
 
-          {/* Quick Info Cards */}
           <View style={styles.quickInfoCards}>
             <View style={styles.infoCard}>
               <Text style={styles.infoCardIcon}>🏟️</Text>
@@ -159,7 +155,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
             </View>
           </View>
 
-          {/* Amenities */}
           <View style={styles.amenitiesSection}>
             <Text style={styles.sectionTitle}>Amenities</Text>
             <View style={styles.amenitiesGrid}>
@@ -172,13 +167,11 @@ const CourtDetailScreen = ({ route, navigation }) => {
             </View>
           </View>
 
-          {/* Description */}
           <View style={styles.descriptionSection}>
             <Text style={styles.sectionTitle}>About</Text>
             <Text style={styles.description}>{court.description}</Text>
           </View>
 
-          {/* Reviews Section */}
           <View style={styles.reviewsSection}>
             <View style={styles.reviewsHeader}>
               <Text style={styles.sectionTitle}>Reviews ({reviews.length})</Text>
@@ -195,7 +188,6 @@ const CourtDetailScreen = ({ route, navigation }) => {
         </View>
       </ScrollView>
 
-      {/* Review Modal */}
       <Modal
         visible={showReviewModal}
         animationType="slide"

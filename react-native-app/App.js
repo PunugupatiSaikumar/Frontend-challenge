@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-// Import screens
 import CourtListScreen from './screens/CourtListScreen';
 import CourtDetailScreen from './screens/CourtDetailScreen';
 
