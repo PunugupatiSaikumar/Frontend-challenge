@@ -75,9 +75,14 @@ Frontend-challenge/
    npm install
    ```
 
-3. Start the development server:
+3. Start the app on your ExpoGo App:
    ```bash
-   npm start
+   npx expo start
+   ```
+
+3.1 Start the app on your ExpoGo App using tunnel if using different networks:
+   ```bash
+   npx expo start --tunnel
    ```
 
 4. Scan the QR code with Expo Go app on your mobile device
