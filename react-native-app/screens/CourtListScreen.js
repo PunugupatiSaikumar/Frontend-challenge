@@ -128,7 +128,6 @@ const CourtListScreen = ({ navigation }) => {
 
       
 
-      {/* Search Modal */}
       {showSearch && (
         <View style={styles.searchModal}>
           <TouchableOpacity 
